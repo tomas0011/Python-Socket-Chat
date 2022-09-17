@@ -1,9 +1,8 @@
 # Python-Socket-Chat
 
-Abrir en una consola
+Correr en una consola el servidor
 ```
 >> python3 servidor.py
-
 Servidor de chat corriendo en 127.0.0.1:33334
 ```
 
