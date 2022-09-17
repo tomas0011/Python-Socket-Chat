@@ -3,8 +3,8 @@ import threading
 
 username = input("Ingresa tu nombre de usuario: ")
 
-host = '8.tcp.ngrok.io'
-port = 19768
+host = '127.0.0.1'
+port = 33334
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((host, port))
@@ -25,7 +25,7 @@ def receptorDeMensajes():
 
 def emisorDeMensajes():
     while True:
-        message = f"{username}: {input('>> ')}"
+        message = f"{username}: {input('')}"
         client.send(message.encode('utf-8'))
 
 receive_thread = threading.Thread(target=receptorDeMensajes)
