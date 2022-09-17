@@ -1,5 +1,4 @@
 # Python-Socket-Chat
-chat with sockets
 
 Abrir en una consola
 ```
